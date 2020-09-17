@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/ecocart/static/css/main.50cca853.chunk.css",
+    "main.js": "/ecocart/static/js/main.8b7ff6d3.chunk.js",
+    "main.js.map": "/ecocart/static/js/main.8b7ff6d3.chunk.js.map",
+    "runtime-main.js": "/ecocart/static/js/runtime-main.55ccef53.js",
+    "runtime-main.js.map": "/ecocart/static/js/runtime-main.55ccef53.js.map",
+    "static/js/2.18e111da.chunk.js": "/ecocart/static/js/2.18e111da.chunk.js",
+    "static/js/2.18e111da.chunk.js.map": "/ecocart/static/js/2.18e111da.chunk.js.map",
+    "index.html": "/ecocart/index.html",
+    "precache-manifest.d2ba0ce857f756cb23cb22ede16f3529.js": "/ecocart/precache-manifest.d2ba0ce857f756cb23cb22ede16f3529.js",
+    "service-worker.js": "/ecocart/service-worker.js",
+    "static/css/main.50cca853.chunk.css.map": "/ecocart/static/css/main.50cca853.chunk.css.map",
+    "static/js/2.18e111da.chunk.js.LICENSE.txt": "/ecocart/static/js/2.18e111da.chunk.js.LICENSE.txt",
+    "static/media/airplane.png": "/ecocart/static/media/airplane.a87721b9.png",
+    "static/media/car.png": "/ecocart/static/media/car.04f8ab9e.png",
+    "static/media/car_electric.png": "/ecocart/static/media/car_electric.bfc48df3.png",
+    "static/media/co2.png": "/ecocart/static/media/co2.380539e6.png",
+    "static/media/diet_type.png": "/ecocart/static/media/diet_type.001eb7b3.png",
+    "static/media/heating_freq.png": "/ecocart/static/media/heating_freq.64209071.png",
+    "static/media/home.png": "/ecocart/static/media/home.b83b55e8.png",
+    "static/media/live.png": "/ecocart/static/media/live.665b810c.png",
+    "static/media/loading.png": "/ecocart/static/media/loading.46d039d8.png",
+    "static/media/location.png": "/ecocart/static/media/location.d4b8cd6e.png",
+    "static/media/new_stuff.png": "/ecocart/static/media/new_stuff.18f2d56d.png",
+    "static/media/people_count.png": "/ecocart/static/media/people_count.79f8ec46.png",
+    "static/media/sprout_1.png": "/ecocart/static/media/sprout_1.b91226ea.png",
+    "static/media/sprout_2.png": "/ecocart/static/media/sprout_2.faf311bf.png",
+    "static/media/stuff_count.png": "/ecocart/static/media/stuff_count.14aada8e.png",
+    "static/media/tree.png": "/ecocart/static/media/tree.45f0b417.png",
+    "static/media/tree_icon.png": "/ecocart/static/media/tree_icon.d1d79770.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55ccef53.js",
+    "static/js/2.18e111da.chunk.js",
+    "static/css/main.50cca853.chunk.css",
+    "static/js/main.8b7ff6d3.chunk.js"
+  ]
+}
