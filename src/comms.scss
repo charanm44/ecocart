@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "~bootstrap/scss/bootstrap";
+
+// colors
+$green: #009249;
+
+$content-width: 42vw;
+$spacing: 2rem;
+$displacement: 1rem;
+$displacement-m: 3rem;
+$displacement-l: 6rem;
+$header-font-size: 2.5rem;
+$subheader-font-size: 1.3rem;
+$emphasis-font-size: 1.5rem;
+$font-normal: 400;
+$font-heavy: 500;
+$font-heavier: 600;
+$font-heaviest: 700;
+$line-spacing: 1.2em;
+$icon-text-spacing: 0.5em;
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+// generic classes
+
+.nudge-down {
+    margin-top: $displacement;
+}
+.nudge-down-l {
+    margin-top: $displacement-m;
+
+}
+.nudge-right {
+    margin-left: $displacement;
+}
+.nudge-right-l {
+    margin-left: $displacement-m;
+}
+.nudge-left-l {
+    margin-right: $displacement-m;
+}
+.flex-center {
+    align-self: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.boldface-link {
+    text-decoration: underline;
+    font-weight: $font-heavy;
+}
+
+// -------------
+
+.header {
+    font-size: $header-font-size;
+    font-weight: $font-heavy;
+    line-height: $line-spacing;
+}
+
+.subheader {
+    font-size: $subheader-font-size;
+    font-weight: $font-heavy;
+}
+
+.subheader-l {
+    font-size: $subheader-font-size;
+    font-weight: $font-heavy;
+}
+
+.action-button {
+    font-weight: $font-heavier;
+}
+
+.error-text {
+    color: red;
+}
+
+// overrides
+
+.btn-success {
+    padding: $displacement $displacement * 2;
+    // background-color: $green;
+    border-color: $green;
+    font-size: $subheader-font-size;
+    font-weight: $font-heavier;
+}

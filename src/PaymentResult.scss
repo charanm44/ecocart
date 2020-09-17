@@ -1,0 +1,13 @@
+@import "./comms.scss";
+
+.intro {
+    .header {
+        @extend .header;
+        color: $green;
+        font-weight: $font-heavier;
+    }
+
+    .fail {
+        color: red;
+    }
+}

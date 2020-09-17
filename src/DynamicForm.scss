@@ -1,0 +1,179 @@
+@import "./comms.scss";
+
+// colors
+$option-outline: #A6A6A6;
+$option-fill: white;
+$option-outline-selected: #009249;
+$option-fill-selected: #e2f0d9;
+$option-aside: #595959;
+$back-button-color: #BFBFBF;
+
+$question-image-height: 10rem;
+$options-border: 2px solid $option-outline;
+$options-border-selected: 2px solid $option-outline-selected;
+$option-input-height: 2rem;
+$option-input-width: 5rem;
+$options-round-edges: 8px;
+
+// progress bar specs
+$box-radius: 0.5rem;
+$progress-container-width: 15rem;
+$progress-height: 0.5rem;
+$progress-background: #ffffff80;
+$progress-container: #67C0DF;
+
+// stat specs
+$stats-image-height: 5rem;
+$stat-width: 11rem;
+$stat-background: #80B5D5;
+$stat-text: white;
+$option-fill-stats: white;
+
+
+
+.form {
+    max-width: $content-width;
+    margin: 0 auto;
+    .progress-container {
+        background-color: $progress-container;
+        color: $option-aside;
+        text-align: start;
+        padding: $icon-text-spacing;
+        border-radius: $box-radius;
+        position: absolute;
+        left: $spacing;
+        width: $progress-container-width;
+        .progress-text {
+            margin-bottom: $icon-text-spacing/2;
+        }
+        .progress {
+            height: $progress-height;
+            background-color: $progress-background;
+        }
+        .progress-bar {
+            background-color: white;
+        }
+    }
+
+    .question-image {
+        // width: $question-image-width;
+        height: $question-image-height;
+    }
+
+    .header {
+        @extend .header;
+        text-align: left;
+    }
+
+    .options {
+        text-align: left;
+        border: $options-border;
+        background-color: $option-fill;
+        font-size: $emphasis-font-size;
+        font-weight: $font-heavy;
+        user-select: none;
+        border-radius: $options-round-edges;
+        cursor: pointer;
+    }
+
+    .options-selected {
+        border: $options-border-selected;
+        background-color: $option-fill-selected;
+        animation-name: animate-option-selection;
+        animation-duration: 1s;
+    }
+
+    .options-stats {
+        background-color: $option-fill-stats;
+        font-weight: $font-heaviest;
+    }
+
+    .option-aside {
+        color: $option-aside;
+        font-size: $subheader-font-size;
+        font-weight: $font-normal;
+    }
+
+    .option-input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        width: $option-input-width;
+        height: $option-input-height;
+        outline: none;
+        margin-right: $icon-text-spacing;
+    }
+
+    .option-input-only {
+        @extend .option-input;
+        width: max-content;
+    }
+
+    @keyframes animate-option-selection {
+        0% {
+            border: $options-border;
+            background-color: $option-fill;
+        }
+        20% {
+            border: $options-border-selected;
+            background-color: $option-fill-selected;
+        }
+        40% {
+            border: $options-border;
+            background-color: $option-fill;
+        }
+        60% {
+            border: $options-border-selected;
+            background-color: $option-fill-selected;
+        }
+        80% {
+            border: $options-border;
+            background-color: $option-fill;
+        }
+        100% {
+            border: $options-border-selected;
+            background-color: $option-fill-selected;
+        }
+    }
+
+    .card-body {
+        padding: $displacement;
+    }
+
+    .stats-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .stat-container {
+            color: $stat-text;
+            background: $stat-background;
+            padding: $displacement;
+            border-radius: $box-radius;
+            width: $stat-width;
+            margin: 0 auto;
+            .stat-image {
+                height: $stats-image-height;
+            }
+            .stat-value {
+                @extend .header;
+                text-align: center;
+            }                        
+        }
+        .stat-separator {
+            @extend .subheader;
+            @extend .nudge-right;
+            margin: 0 auto;
+        }
+    }
+
+    .back-button {
+        background-color: $back-button-color;
+        border: none;
+    }
+
+    .summary-tagline {
+        @extend .subheader;
+        @extend .nudge-down;
+        // font-weight: unset;
+    }
+}
