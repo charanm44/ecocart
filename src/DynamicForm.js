@@ -171,7 +171,7 @@ export class DynamicForm extends Component {
     overToStripe = async () => {
         this.setState({ clickedCheckoutConfirm: true });
         const stripe = await stripePromise;
-        const response = await fetch("https://stripe-setup-server.herokuapp.com/create-session", {
+        const response = await fetch("https://ecocart-stripe-server.herokuapp.com/create-session", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ productName: this.state.productName, payableAmount: this.state.payableAmount })
